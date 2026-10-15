@@ -1,0 +1,6 @@
+[project]
+name = "yield-prediction-assistant"
+version = "0.1.0"
+description = "Local synthetic yield forecasting and planning portfolio demo"
+requires-python = ">=3.11"
+dependencies = []

@@ -1,0 +1,25 @@
+{
+  "status": "unsupported_question",
+  "mode": "synthetic_portfolio_demo",
+  "as_of": "2026-09",
+  "scope": {
+    "role": "management",
+    "division": "ALL"
+  },
+  "question": "Tell me the exact fertilizer dose to apply",
+  "intent": null,
+  "review_status": "human_review_required",
+  "trace": [
+    "validate_monthly_data",
+    "filter_division_before_training",
+    "route_supported_question"
+  ],
+  "answer": "No supported intent matched; no prediction was generated.",
+  "supported_questions": [
+    "forecast next month",
+    "show historical yield",
+    "show model evaluation",
+    "simulate lower rainfall",
+    "draft harvest plan"
+  ]
+}

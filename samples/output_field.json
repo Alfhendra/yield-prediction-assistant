@@ -1,0 +1,396 @@
+{
+  "status": "answered",
+  "mode": "synthetic_portfolio_demo",
+  "as_of": "2026-09",
+  "scope": {
+    "role": "field",
+    "division": "DIV_A"
+  },
+  "question": "prediksi bulan depan",
+  "intent": "forecast",
+  "review_status": "human_review_required",
+  "trace": [
+    "validate_monthly_data",
+    "filter_division_before_training",
+    "route_supported_question",
+    "evaluate_on_chronological_holdout",
+    "refit_on_all_available_history",
+    "predict_one_month_ahead"
+  ],
+  "data_provenance": {
+    "scoped_record_count": 96,
+    "start_month": "2022-10",
+    "end_month": "2026-09",
+    "sha256": "3c63c1d93ccecf5d949880ddb2554036c44968ac9ac94ba98c0ac7a6fffdc900",
+    "record_ids": [
+      "OBS_A01_202210",
+      "OBS_A02_202210",
+      "OBS_A01_202211",
+      "OBS_A02_202211",
+      "OBS_A01_202212",
+      "OBS_A02_202212",
+      "OBS_A01_202301",
+      "OBS_A02_202301",
+      "OBS_A01_202302",
+      "OBS_A02_202302",
+      "OBS_A01_202303",
+      "OBS_A02_202303",
+      "OBS_A01_202304",
+      "OBS_A02_202304",
+      "OBS_A01_202305",
+      "OBS_A02_202305",
+      "OBS_A01_202306",
+      "OBS_A02_202306",
+      "OBS_A01_202307",
+      "OBS_A02_202307",
+      "OBS_A01_202308",
+      "OBS_A02_202308",
+      "OBS_A01_202309",
+      "OBS_A02_202309",
+      "OBS_A01_202310",
+      "OBS_A02_202310",
+      "OBS_A01_202311",
+      "OBS_A02_202311",
+      "OBS_A01_202312",
+      "OBS_A02_202312",
+      "OBS_A01_202401",
+      "OBS_A02_202401",
+      "OBS_A01_202402",
+      "OBS_A02_202402",
+      "OBS_A01_202403",
+      "OBS_A02_202403",
+      "OBS_A01_202404",
+      "OBS_A02_202404",
+      "OBS_A01_202405",
+      "OBS_A02_202405",
+      "OBS_A01_202406",
+      "OBS_A02_202406",
+      "OBS_A01_202407",
+      "OBS_A02_202407",
+      "OBS_A01_202408",
+      "OBS_A02_202408",
+      "OBS_A01_202409",
+      "OBS_A02_202409",
+      "OBS_A01_202410",
+      "OBS_A02_202410",
+      "OBS_A01_202411",
+      "OBS_A02_202411",
+      "OBS_A01_202412",
+      "OBS_A02_202412",
+      "OBS_A01_202501",
+      "OBS_A02_202501",
+      "OBS_A01_202502",
+      "OBS_A02_202502",
+      "OBS_A01_202503",
+      "OBS_A02_202503",
+      "OBS_A01_202504",
+      "OBS_A02_202504",
+      "OBS_A01_202505",
+      "OBS_A02_202505",
+      "OBS_A01_202506",
+      "OBS_A02_202506",
+      "OBS_A01_202507",
+      "OBS_A02_202507",
+      "OBS_A01_202508",
+      "OBS_A02_202508",
+      "OBS_A01_202509",
+      "OBS_A02_202509",
+      "OBS_A01_202510",
+      "OBS_A02_202510",
+      "OBS_A01_202511",
+      "OBS_A02_202511",
+      "OBS_A01_202512",
+      "OBS_A02_202512",
+      "OBS_A01_202601",
+      "OBS_A02_202601",
+      "OBS_A01_202602",
+      "OBS_A02_202602",
+      "OBS_A01_202603",
+      "OBS_A02_202603",
+      "OBS_A01_202604",
+      "OBS_A02_202604",
+      "OBS_A01_202605",
+      "OBS_A02_202605",
+      "OBS_A01_202606",
+      "OBS_A02_202606",
+      "OBS_A01_202607",
+      "OBS_A02_202607",
+      "OBS_A01_202608",
+      "OBS_A02_202608",
+      "OBS_A01_202609",
+      "OBS_A02_202609"
+    ]
+  },
+  "evaluation": {
+    "method": "fixed_training_window_then_six_month_one_step_holdout",
+    "holdout_start": "2026-04",
+    "holdout_end": "2026-09",
+    "training_target_end": "2026-03",
+    "training_examples": 82,
+    "ridge": {
+      "mae_t_ha": 0.039914,
+      "rmse_t_ha": 0.050384,
+      "wape_pct": 1.6216,
+      "observations": 12
+    },
+    "previous_month_baseline": {
+      "mae_t_ha": 0.234525,
+      "rmse_t_ha": 0.25371,
+      "wape_pct": 9.5282,
+      "observations": 12
+    },
+    "holdout_predictions": [
+      {
+        "target_id": "OBS_A01_202604",
+        "source_id": "OBS_A01_202603",
+        "month": "2026-04",
+        "actual_t_ha": 2.832,
+        "predicted_t_ha": 2.91858,
+        "baseline_t_ha": 2.4892
+      },
+      {
+        "target_id": "OBS_A02_202604",
+        "source_id": "OBS_A02_202603",
+        "month": "2026-04",
+        "actual_t_ha": 2.5104,
+        "predicted_t_ha": 2.519317,
+        "baseline_t_ha": 2.3345
+      },
+      {
+        "target_id": "OBS_A01_202605",
+        "source_id": "OBS_A01_202604",
+        "month": "2026-05",
+        "actual_t_ha": 2.7356,
+        "predicted_t_ha": 2.761317,
+        "baseline_t_ha": 2.832
+      },
+      {
+        "target_id": "OBS_A02_202605",
+        "source_id": "OBS_A02_202604",
+        "month": "2026-05",
+        "actual_t_ha": 2.7526,
+        "predicted_t_ha": 2.798376,
+        "baseline_t_ha": 2.5104
+      },
+      {
+        "target_id": "OBS_A01_202606",
+        "source_id": "OBS_A01_202605",
+        "month": "2026-06",
+        "actual_t_ha": 2.9452,
+        "predicted_t_ha": 2.982541,
+        "baseline_t_ha": 2.7356
+      },
+      {
+        "target_id": "OBS_A02_202606",
+        "source_id": "OBS_A02_202605",
+        "month": "2026-06",
+        "actual_t_ha": 2.6279,
+        "predicted_t_ha": 2.726548,
+        "baseline_t_ha": 2.7526
+      },
+      {
+        "target_id": "OBS_A01_202607",
+        "source_id": "OBS_A01_202606",
+        "month": "2026-07",
+        "actual_t_ha": 2.4898,
+        "predicted_t_ha": 2.473291,
+        "baseline_t_ha": 2.9452
+      },
+      {
+        "target_id": "OBS_A02_202607",
+        "source_id": "OBS_A02_202606",
+        "month": "2026-07",
+        "actual_t_ha": 2.3695,
+        "predicted_t_ha": 2.368778,
+        "baseline_t_ha": 2.6279
+      },
+      {
+        "target_id": "OBS_A01_202608",
+        "source_id": "OBS_A01_202607",
+        "month": "2026-08",
+        "actual_t_ha": 2.1708,
+        "predicted_t_ha": 2.205958,
+        "baseline_t_ha": 2.4898
+      },
+      {
+        "target_id": "OBS_A02_202608",
+        "source_id": "OBS_A02_202607",
+        "month": "2026-08",
+        "actual_t_ha": 2.1523,
+        "predicted_t_ha": 2.186613,
+        "baseline_t_ha": 2.3695
+      },
+      {
+        "target_id": "OBS_A01_202609",
+        "source_id": "OBS_A01_202608",
+        "month": "2026-09",
+        "actual_t_ha": 2.0291,
+        "predicted_t_ha": 1.95031,
+        "baseline_t_ha": 2.1708
+      },
+      {
+        "target_id": "OBS_A02_202609",
+        "source_id": "OBS_A02_202608",
+        "month": "2026-09",
+        "actual_t_ha": 1.9213,
+        "predicted_t_ha": 1.931794,
+        "baseline_t_ha": 2.1523
+      }
+    ],
+    "limitations": [
+      "Each holdout prediction uses actual previous-month observations available at that origin.",
+      "This is not a six-month-ahead forecast.",
+      "Metrics describe synthetic data only; WAPE is an error measure, not accuracy."
+    ]
+  },
+  "model": {
+    "algorithm": "ridge_regression",
+    "alpha": 1.0,
+    "feature_names": [
+      "previous_yield_t_ha",
+      "previous_rainfall_mm",
+      "previous_fertilizer_kg_ha",
+      "previous_upkeep_pct",
+      "previous_palm_age_years",
+      "target_month_sin",
+      "target_month_cos"
+    ],
+    "coefficients": [
+      2.22777872,
+      0.19025845,
+      0.15060764,
+      0.10537166,
+      0.0484346,
+      -0.03903022,
+      0.16399761,
+      -0.00686188
+    ],
+    "centers": [
+      2.22969468,
+      191.94861702,
+      45.98968085,
+      77.50010638,
+      12.41666596,
+      0.0212766,
+      -0.0
+    ],
+    "scales": [
+      0.48025664,
+      82.75941418,
+      19.66645786,
+      11.6337448,
+      1.87823769,
+      0.69922029,
+      0.7145896
+    ],
+    "ranges": [
+      [
+        1.3175,
+        3.118
+      ],
+      [
+        15.68,
+        337.42
+      ],
+      [
+        10.72,
+        74.85
+      ],
+      [
+        57.37,
+        97.07
+      ],
+      [
+        9.0,
+        15.8333
+      ],
+      [
+        -1.0,
+        1.0
+      ],
+      [
+        -1.0,
+        1.0
+      ]
+    ],
+    "training_examples": 94,
+    "trained_through": "2026-09"
+  },
+  "forecast": [
+    {
+      "division": "DIV_A",
+      "block": "A01",
+      "forecast_month": "2026-10",
+      "area_ha": 40.0,
+      "prediction_t_ha": 1.808175,
+      "prediction_tonnes": 72.327002,
+      "source_id": "OBS_A01_202609",
+      "feature_values": {
+        "previous_yield_t_ha": 2.0291,
+        "previous_rainfall_mm": 83.55,
+        "previous_fertilizer_kg_ha": 52.52,
+        "previous_upkeep_pct": 94.81,
+        "previous_palm_age_years": 12.9167,
+        "target_month_sin": -1.0,
+        "target_month_cos": -0.0
+      },
+      "explanation": {
+        "intercept": 2.22777872,
+        "contributions_t_ha": {
+          "previous_yield_t_ha": -0.07946758,
+          "previous_rainfall_mm": -0.19726649,
+          "previous_fertilizer_kg_ha": 0.03498904,
+          "previous_upkeep_pct": 0.07206603,
+          "previous_palm_age_years": -0.01039082,
+          "target_month_sin": -0.23953384,
+          "target_month_cos": 0.0
+        },
+        "raw_prediction_t_ha": 1.80817505,
+        "clipped_to_zero": false,
+        "outside_training_range": []
+      }
+    },
+    {
+      "division": "DIV_A",
+      "block": "A02",
+      "forecast_month": "2026-10",
+      "area_ha": 55.0,
+      "prediction_t_ha": 1.730266,
+      "prediction_tonnes": 95.164656,
+      "source_id": "OBS_A02_202609",
+      "feature_values": {
+        "previous_yield_t_ha": 1.9213,
+        "previous_rainfall_mm": 102.24,
+        "previous_fertilizer_kg_ha": 72.38,
+        "previous_upkeep_pct": 67.6,
+        "previous_palm_age_years": 15.9167,
+        "target_month_sin": -1.0,
+        "target_month_cos": -0.0
+      },
+      "explanation": {
+        "intercept": 2.22777872,
+        "contributions_t_ha": {
+          "previous_yield_t_ha": -0.12217363,
+          "previous_rainfall_mm": -0.16325397,
+          "previous_fertilizer_kg_ha": 0.14139769,
+          "previous_upkeep_pct": -0.04121697,
+          "previous_palm_age_years": -0.07273153,
+          "target_month_sin": -0.23953384,
+          "target_month_cos": 0.0
+        },
+        "raw_prediction_t_ha": 1.73026648,
+        "clipped_to_zero": false,
+        "outside_training_range": [
+          "previous_palm_age_years"
+        ]
+      }
+    }
+  ],
+  "forecast_total_tonnes": 167.491658,
+  "limitations": [
+    "Synthetic model and data; not validated for agricultural decisions.",
+    "Linear contributions explain model arithmetic, not causal agronomic effects.",
+    "No calibrated uncertainty interval is available; extrapolation is flagged.",
+    "Caller-selected role and division simulate scoping; they are not authentication."
+  ]
+}
